@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "Meetup.Sagas.Contracts/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.2",
+      "compile": {
+        "bin/Debug/Meetup.Sagas.Contracts.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Meetup.Sagas.Contracts.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Meetup.Sagas.Contracts.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

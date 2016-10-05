@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <h3>Корзина</h3>
+    
+    <div>
+        <form asp-action="AddItem">
+            
+            <div class="form-group">
+                <input type="submit" class="btn btn-default btn-lg" value="Добавить" />
+            </div>
+        </form>
+        
+    </div>
+    
+    <form asp-action="Checkout">
+        <input type="submit" class="btn btn-success btn-lg" value="Купить!" />
+    </form>
+    
+</div>
+

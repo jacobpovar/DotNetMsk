@@ -54,9 +54,9 @@
   <ItemGroup>
     <Compile Include="Confirmation\ConfirmActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Retrieve\MakeReservationActivity.cs" />
-    <Compile Include="Retrieve\MakeReservationArguments.cs" />
-    <Compile Include="Retrieve\ReservationLog.cs" />
+    <Compile Include="Reserve\MakeReservationActivity.cs" />
+    <Compile Include="Reserve\MakeReservationArguments.cs" />
+    <Compile Include="Reserve\ReservationLog.cs" />
     <Compile Include="Validate\ValidateActivity.cs" />
     <Compile Include="Validate\ValidateArguments.cs" />
   </ItemGroup>

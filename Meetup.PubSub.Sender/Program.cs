@@ -24,7 +24,10 @@ namespace Meetup.PubSub.Sender
 
             bus.Start();
 
-            bus.Publish(new SayHiEvent());
+            Console.WriteLine("Bus started, enter smth to send command");
+            
+            var line = Console.ReadLine();
+            bus.Publish(new SayHiEvent(line));
 
             Console.WriteLine("Published message!");
         }
@@ -32,5 +35,11 @@ namespace Meetup.PubSub.Sender
 
     public class SayHiEvent : SayHi
     {
+        public SayHiEvent(string name)
+        {
+            this.Name = name;
+        }
+
+        public string Name { get; }
     }
 }

@@ -1,18 +1,19 @@
 ﻿using System;
 
-namespace Meetup.Commands.Contracts
+namespace Meetup.PubSub.Messages.MoreMessages
 {
     public interface InvoiceCreated
     {
         string InvoiceId { get; }
     }
-    
+
     public interface InvoiceCreatedV2
     {
         Guid InvoiceId { get; }
 
         DateTime Timestamp { get; }
     }
+
 
     internal class InvoiceCreatedEvent : InvoiceCreated, InvoiceCreatedV2
     {
@@ -21,7 +22,7 @@ namespace Meetup.Commands.Contracts
             this.Timestamp = DateTime.Now;
             this.InvoiceId = invoiceId;
         }
-        
+
         public DateTime Timestamp { get; }
 
         public Guid InvoiceId { get; }

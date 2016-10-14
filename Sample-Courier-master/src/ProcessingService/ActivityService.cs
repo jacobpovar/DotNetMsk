@@ -45,7 +45,6 @@ namespace ProcessingService
                 x.UseSerilog(Log.Logger);
 
                 ///////
-                /// 
                 x.ReceiveEndpoint(host, ConfigurationManager.AppSettings["ValidateActivityQueue"], e =>
                 {
                     e.PrefetchCount = 100;

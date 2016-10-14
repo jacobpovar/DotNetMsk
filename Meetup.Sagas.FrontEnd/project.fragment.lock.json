@@ -5,13 +5,13 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.6.2",
       "compile": {
-        "bin/Debug/Meetup.Sagas.Contracts.dll": {}
+        "bin/Release/Meetup.Sagas.Contracts.dll": {}
       },
       "runtime": {
-        "bin/Debug/Meetup.Sagas.Contracts.dll": {}
+        "bin/Release/Meetup.Sagas.Contracts.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/Meetup.Sagas.Contracts.pdb": {
+        "bin/Release/Meetup.Sagas.Contracts.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true

@@ -25,7 +25,7 @@ namespace Meetup.PubSub.ConsumerA
                     configurator.ReceiveEndpoint(rabbitMqHost, "MskDotNet.HelloWorld.InputQueue",
                         endpointConfigurator =>
                         {
-                            endpointConfigurator.Consumer<CreateUserCommandHandler>(); 
+                            endpointConfigurator.Consumer<SayHiCommandHandler>(); 
                         });
                 });
 
@@ -37,11 +37,11 @@ namespace Meetup.PubSub.ConsumerA
         }
     }
 
-    internal class CreateUserCommandHandler : IConsumer<SayHi>
+    internal class SayHiCommandHandler : IConsumer<SayHi>
     {
         public Task Consume(ConsumeContext<SayHi> context)
         {
-            return Console.Out.WriteLineAsync("Consumer A: sending email");
+            return Console.Out.WriteLineAsync($"From consumer: hi, {context.Message.Name}");
         }
     }
 }
